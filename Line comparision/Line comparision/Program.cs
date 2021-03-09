@@ -23,6 +23,12 @@ namespace Line_Comparision
             double length1 = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             double length2 = Math.Sqrt(Math.Pow(x4 - x3, 2) + Math.Pow(y4 - y3, 2));
             int diffrence = length1.CompareTo(length2);
+            Boolean deffrence2= length1.Equals(length2);
+            if (deffrence2 == true)
+                Console.WriteLine("Both Lines are equal in length");
+            else
+                Console.WriteLine("Both are not same");
+
             if (diffrence == 0)
                 Console.WriteLine("Both Lines are equal in length");
             else if (diffrence > 0)
